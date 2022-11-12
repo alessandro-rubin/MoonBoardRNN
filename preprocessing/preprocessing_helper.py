@@ -16,10 +16,10 @@ hyperparameter = [1, 1]
 operationList = ["RH", "LH"]
 
 cwd = os.getcwd()
-parent_wd = cwd.replace('/preprocessing', '')
-left_hold_feature_path = parent_wd + '/raw_data/HoldFeature2016LeftHand.csv'
-right_hold_feature_path = parent_wd + '/raw_data/HoldFeature2016RightHand.csv'
-url_data_path = parent_wd + '/raw_data/moonGen_scrape_2016_cp'
+parent_wd=os.path.dirname(cwd)
+left_hold_feature_path = os.path.join(parent_wd,'raw_data','HoldFeature2016LeftHand.csv') 
+right_hold_feature_path = os.path.join(parent_wd,'raw_data','HoldFeature2016RightHand.csv') 
+url_data_path = os.path.join(parent_wd,'raw_data','moonGen_scrape_2016_cp') 
 
 LeftHandfeatures = pd.read_csv(left_hold_feature_path, dtype=str)
 RightHandfeatures = pd.read_csv(right_hold_feature_path, dtype=str)
