@@ -1,5 +1,7 @@
 # MoonBoardRNN
 
+## A fork of MoonBoardRNN by https://github.com/jrchang612, just for studying/experimentation purposes
+
 This repository features 3 key models:
 
 (1) BetaMove, a preprocessing code which converts a MoonBoard problem into a move sequence that is similar to the predicted move sequence of climbing experts.
